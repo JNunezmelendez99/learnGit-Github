@@ -15,4 +15,5 @@ quizForm.addEventListener('submit', function(event) {
 
     resultDiv.innerHTML = `Tu puntaje es: ${score} de 7.`;
     // Puedes añadir lógica para otorgar un badge aquí.
+    
 });
