@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz sobre Comandos de Git</title>
+</head>
+<body>
+    <header>
+
+        <h1>Quiz sobre Comandos de Git</h1>
+        <p>¿Qué tanto sabes sobre los comandos de Git? Responde las preguntas a continuación:</p>
+
+        <a href="comandos.html" class="btn">Comandos de Git</a>
+
+        <a href="index.html" class="btn">Inicio</a>
+    </header>
+
+    <div class="container">
+        <form id="quiz-form">
+            <div>
+                <label>1. ¿Qué comando se utiliza para clonar un repositorio?</label><br>
+                <input type="radio" name="q1" value="a"> git clone<br>
+                <input type="radio" name="q1" value="b"> git copy<br>
+                <input type="radio" name="q1" value="c"> git pull<br>
+            </div>
+
+            <div>
+                <label>2. ¿Cómo se verifica el estado de un repositorio?</label><br>
+                <input type="radio" name="q2" value="a"> git status<br>
+                <input type="radio" name="q2" value="b"> git check<br>
+                <input type="radio" name="q2" value="c"> git inspect<br>
+            </div>
+
+            <div>
+                <label>3. ¿Cuál es el comando para hacer un "commit" en Git?</label><br>
+                <input type="radio" name="q3" value="a"> git commit -m<br>
+                <input type="radio" name="q3" value="b"> git save<br>
+                <input type="radio" name="q3" value="c"> git push<br>
+            </div>
+
+            <div>
+                <label>4. ¿Qué comando se utiliza para mostrar el historial de commits?</label><br>
+                <input type="radio" name="q4" value="a"> git log<br>
+                <input type="radio" name="q4" value="b"> git history<br>
+                <input type="radio" name="q4" value="c"> git past<br>
+            </div>
+
+            <div>
+                <label>5. ¿Cómo se deshace un commit anterior?</label><br>
+                <input type="radio" name="q5" value="a"> git undo<br>
+                <input type="radio" name="q5" value="b"> git revert<br>
+                <input type="radio" name="q5" value="c"> git rollback<br>
+            </div>
+
+            <div>
+                <label>6. ¿Qué comando se utiliza para ver las diferencias entre archivos?</label><br>
+                <input type="radio" name="q6" value="a"> git diff<br>
+                <input type="radio" name="q6" value="b"> git compare<br>
+                <input type="radio" name="q6" value="c"> git changes<br>
+            </div>
+
+            <div>
+                <label>7. ¿Cómo se borra una rama en Git?</label><br>
+                <input type="radio" name="q7" value="a"> git branch -d <nombre_rama><br>
+                <input type="radio" name="q7" value="b"> git delete <nombre_rama><br>
+                <input type="radio" name="q7" value="c"> git remove <nombre_rama><br>
+            </div>
+
+            <button type="submit" class="btn">Enviar Respuestas</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos de Git - Aconztech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1>Aconztech</h1>
+        <p>Aprende Git y GitHub de forma divertida y paso a paso</p>
+        <nav>
+           
+            <a href="comandos.html" class="btn">Comandos de Git</a>
+            <a href="quiz.html" class="btn">Quiz sobre Git</a> <!-- Nuevo botón para el quiz -->
+        </nav>
+
+    </header>
+
+    <!-- Contenido principal de comandos -->
+    <main>
+        <section>
+            <section class="commands">
+                <h2>Comandos Básicos de Git</h2>
+                <ul>
+                    <li><strong>git init</strong>: Crea un nuevo repositorio de Git en el directorio actual.</li>
+                    <li><strong>git clone &lt;url&gt;</strong>: Clona un repositorio remoto en tu máquina local.</li>
+                    <li><strong>git status</strong>: Muestra el estado de los archivos en el repositorio.</li>
+                    <li><strong>git add &lt;archivo&gt;</strong>: Añade un archivo al área de preparación (staging area).</li>
+                    <li><strong>git commit -m "mensaje"</strong>: Guarda los cambios en el historial de Git con un mensaje descriptivo.</li>
+                    <li><strong>git log</strong>: Muestra el historial de commits.</li>
+                    <li><strong>git diff</strong>: Compara cambios entre el estado actual y los cambios en el área de preparación.</li>
+                    <li><strong>git branch</strong>: Lista todas las ramas del repositorio.</li>
+                    <li><strong>git checkout &lt;rama&gt;</strong>: Cambia a otra rama en el repositorio.</li>
+                    <li><strong>git merge &lt;rama&gt;</strong>: Fusiona una rama especificada con la rama actual.</li>
+                </ul>
+            
+                <h2>Comandos Intermedios de Git</h2>
+                <ul>
+                    <li><strong>git remote add origin &lt;url&gt;</strong>: Conecta un repositorio local con un repositorio remoto.</li>
+                    <li><strong>git push origin &lt;rama&gt;</strong>: Envía cambios locales al repositorio remoto en la rama especificada.</li>
+                    <li><strong>git pull origin &lt;rama&gt;</strong>: Trae cambios del repositorio remoto y los fusiona con la rama actual.</li>
+                    <li><strong>git stash</strong>: Guarda temporalmente los cambios no confirmados y deja el área de trabajo limpia.</li>
+                    <li><strong>git stash apply</strong>: Restaura los cambios guardados previamente con <code>git stash</code>.</li>
+                    <li><strong>git reset &lt;archivo&gt;</strong>: Quita un archivo del área de preparación sin borrar sus cambios.</li>
+                    <li><strong>git reset --hard &lt;commit&gt;</strong>: Restaura el estado del repositorio al commit especificado (se pierden los cambios posteriores).</li>
+                    <li><strong>git rebase &lt;rama&gt;</strong>: Aplica los commits de una rama sobre otra, reorganizando el historial.</li>
+                    <li><strong>git tag &lt;nombre&gt;</strong>: Crea una etiqueta en el commit actual, útil para marcar versiones.</li>
+                    <li><strong>git show &lt;tag&gt;</strong>: Muestra los detalles de una etiqueta o un commit específico.</li>
+                </ul>
+            
+                <h2>Comandos Avanzados de Git</h2>
+                <ul>
+                    <li><strong>git cherry-pick &lt;commit&gt;</strong>: Aplica un commit específico de otra rama a la rama actual.</li>
+                    <li><strong>git revert &lt;commit&gt;</strong>: Crea un nuevo commit que deshace los cambios de un commit específico.</li>
+                    <li><strong>git log --oneline</strong>: Muestra el historial de commits en una línea por cada commit.</li>
+                    <li><strong>git log --graph --oneline</strong>: Muestra el historial de commits como un gráfico en una sola línea por commit.</li>
+                    <li><strong>git reflog</strong>: Muestra el historial de comandos ejecutados en el repositorio.</li>
+                    <li><strong>git bisect</strong>: Ayuda a encontrar el commit que introdujo un error realizando una búsqueda binaria entre commits.</li>
+                    <li><strong>git blame &lt;archivo&gt;</strong>: Muestra quién hizo cada cambio en un archivo específico.</li>
+                    <li><strong>git archive &lt;rama&gt;</strong>: Crea un archivo comprimido (zip o tar) del contenido de una rama.</li>
+                    <li><strong>git submodule add &lt;url&gt;</strong>: Añade un submódulo al repositorio desde un repositorio externo.</li>
+                    <li><strong>git clean -f</strong>: Elimina archivos sin seguimiento en el directorio de trabajo.</li>
+                </ul>
+            
+                <h2>Trabajar con GitHub</h2>
+                <ul>
+                    <li><strong>git push origin &lt;rama&gt;</strong>: Sube los cambios locales a la rama especificada en GitHub.</li>
+                    <li><strong>git pull origin &lt;rama&gt;</strong>: Baja los cambios de GitHub y los fusiona con la rama actual.</li>
+                    <li><strong>git fetch origin</strong>: Baja los cambios de GitHub sin fusionarlos automáticamente.</li>
+                    <li><strong>Creación de Pull Requests</strong>: GitHub permite proponer cambios mediante "pull requests". Para hacerlo, sube tu rama y, en GitHub, selecciona "New pull request".</li>
+                    <li><strong>Revisión de Código</strong>: GitHub permite revisar y comentar en cada pull request, lo que facilita el feedback en equipo.</li>
+                    <li><strong>Issues</strong>: Permite abrir temas o problemas en el repositorio para discutir y realizar seguimiento de tareas o errores.</li>
+                    <li><strong>GitHub Actions</strong>: GitHub permite automatizar flujos de trabajo (como pruebas o despliegues) mediante <code>GitHub Actions</code>, que se configura a través de un archivo YAML en el repositorio.</li>
+                    <li><strong>GitHub Pages</strong>: Puedes alojar sitios web estáticos directamente desde un repositorio de GitHub configurando <code>GitHub Pages</code>.</li>
+                    <li><strong>Fork</strong>: Hacer un "fork" de un repositorio permite crear una copia completa en tu perfil de GitHub para modificarla y luego proponer cambios al original.</li>
+                    <li><strong>Colaboración</strong>: Puedes añadir colaboradores al repositorio para permitir contribuciones directas, o usar <code>pull requests</code> para colaborar sin permisos.</li>
+                </ul>
+
+                <h2>Comandos Intermedios de Git</h2>
+                <ul>
+                    <li><strong>git remote add origin &lt;url&gt;</strong>: Conecta un repositorio local con un repositorio remoto.</li>
+                    <li><strong>git push origin &lt;rama&gt;</strong>: Envía cambios locales al repositorio remoto en la rama especificada.</li>
+                    <li><strong>git pull origin &lt;rama&gt;</strong>: Trae cambios del repositorio remoto y los fusiona con la rama actual.</li>
+                    <li><strong>git stash</strong>: Guarda temporalmente los cambios no confirmados y deja el área de trabajo limpia.</li>
+                    <li><strong>git stash apply</strong>: Restaura los cambios guardados previamente con <code>git stash</code>.</li>
+                    <li><strong>git reset &lt;archivo&gt;</strong>: Quita un archivo del área de preparación sin borrar sus cambios.</li>
+                    <li><strong>git reset --hard &lt;commit&gt;</strong>: Restaura el estado del repositorio al commit especificado (se pierden los cambios posteriores).</li>
+                    <li><strong>git rebase &lt;rama&gt;</strong>: Aplica los commits de una rama sobre otra, reorganizando el historial.</li>
+                    <li><strong>git tag &lt;nombre&gt;</strong>: Crea una etiqueta en el commit actual, útil para marcar versiones.</li>
+                    <li><strong>git show &lt;tag&gt;</strong>: Muestra los detalles de una etiqueta o un commit específico.</li>
+                </ul>
+
+                <h2>Comandos Avanzados de Git</h2>
+                <ul>
+                    <li><strong>git cherry-pick &lt;commit&gt;</strong>: Aplica un commit específico de otra rama a la rama actual.</li>
+                    <li><strong>git revert &lt;commit&gt;</strong>: Crea un nuevo commit que deshace los cambios de un commit específico.</li>
+                    <li><strong>git log --oneline</strong>: Muestra el historial de commits en una línea por cada commit.</li>
+                    <li><strong>git log --graph --oneline</strong>: Muestra el historial de commits como un gráfico en una sola línea por commit.</li>
+                    <li><strong>git reflog</strong>: Muestra el historial de comandos ejecutados en el repositorio.</li>
+                    <li><strong>git bisect</strong>: Ayuda a encontrar el commit que introdujo un error realizando una búsqueda binaria entre commits.</li>
+                    <li><strong>git blame &lt;archivo&gt;</strong>: Muestra quién hizo cada cambio en un archivo específico.</li>
+                    <li><strong>git archive &lt;rama&gt;</strong>: Crea un archivo comprimido (zip o tar) del contenido de una rama.</li>
+                    <li><strong>git submodule add &lt;url&gt;</strong>: Añade un submódulo al repositorio desde un repositorio externo.</li>
+                    <li><strong>git clean -f</strong>: Elimina archivos sin seguimiento en el directorio de trabajo.</li>
+                </ul>
+            
+                <h2>Trabajar con GitHub</h2>
+                <ul>
+                    <li><strong>git push origin &lt;rama&gt;</strong>: Sube los cambios locales a la rama especificada en GitHub.</li>
+                    <li><strong>git pull origin &lt;rama&gt;</strong>: Baja los cambios de GitHub y los fusiona con la rama actual.</li>
+                    <li><strong>git fetch origin</strong>: Baja los cambios de GitHub sin fusionarlos automáticamente.</li>
+                    <li><strong>Creación de Pull Requests</strong>: GitHub permite proponer cambios mediante "pull requests". Para hacerlo, sube tu rama y, en GitHub, selecciona "New pull request".</li>
+                    <li><strong>Revisión de Código</strong>: GitHub permite revisar y comentar en cada pull request, lo que facilita el feedback en equipo.</li>
+                    <li><strong>Issues</strong>: Permite abrir temas o problemas en el repositorio para discutir y realizar seguimiento de tareas o errores.</li>
+                    <li><strong>GitHub Actions</strong>: GitHub permite automatizar flujos de trabajo (como pruebas o despliegues) mediante <code>GitHub Actions</code>, que se configura a través de un archivo YAML en el repositorio.</li>
+                    <li><strong>GitHub Pages</strong>: Puedes alojar sitios web estáticos directamente desde un repositorio de GitHub configurando <code>GitHub Pages</code>.</li>
+                    <li><strong>Fork</strong>: Hacer un "fork" de un repositorio permite crear una copia completa en tu perfil de GitHub para modificarla y luego proponer cambios al original.</li>
+                    <li><strong>Colaboración</strong>: Puedes añadir colaboradores al repositorio para permitir contribuciones directas, o usar <code>pull requests</code> para colaborar sin permisos.</li>
+                </ul>
+
+
+        
+            </section>
+            
+            </article>
+            
+            
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Aconztech - Tu blog de tecnología para aprender Git y GitHub</p>
+    </footer>
+</body>
+</html>
